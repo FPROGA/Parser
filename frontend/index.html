@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="file-upload-container">
+        <div class="upload-section">
+          <h3>Загрузите документы резюме</h3>
+          
+          <div class="upload-box">
+            <input type="file" id="file1" class="file-input" accept=".pdf,.doc,.docx" />
+            <label for="file1" class="file-label">
+              <svg class="upload-icon" viewBox="0 0 24 24">
+                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+              </svg>
+              <span>Выберите файл</span>
+              <span class="file-name" id="file1-name">Файл не выбран</span>
+            </label>
+          </div>
+          
+          
+          <button class="analyze-btn">Анализировать резюме</button>
+        </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
