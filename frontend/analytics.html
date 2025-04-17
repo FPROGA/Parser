@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аналитика резюме</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Аналитика резюме</h1>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <h2>Общее количество резюме</h2>
+                <div class="count" id="total-resumes">0</div>
+            </div>
+            <div class="stat-card">
+                <h2>Топ кандидатов</h2>
+                <div id="top-candidates-list"></div>
+            </div>
+            <div class="stat-card">
+                <h2>Топ-5 навыков кандидатов</h2>
+                <div id="top-skills-list"></div>
+            </div>
+        </div>
+        
+        <div class="chart-card">
+            <h2>Распределение топ-5 навыков кандидатов</h2>
+            <canvas id="skillsChart"></canvas>
+        </div>
+        
+        <a href="index.html" class="back-link">← Вернуться к загрузке резюме</a>
+        <a href="vacancies.html" class="back-link">← Перейти к аналитике вакансий</a>
+    </div>
+
+    <script src="analytics.js"></script>
+</body>
+</html>

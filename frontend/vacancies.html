@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аналитика вакансий с HeadHunter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Аналитика вакансий с HeadHunter</h1>
+        
+        <div class="loader-container">
+            <div class="loader" id="loader"></div>
+            <p id="loading-text">Загрузка вакансий...</p>
+        </div>
+
+        <div class="profession-tabs" id="profession-tabs">
+            <!-- Здесь будут вкладки с профессиями -->
+        </div>
+        
+        <div class="vacancy-stats" id="vacancy-stats">
+            <!-- Здесь будет статистика по вакансиям -->
+        </div>
+        
+        <div class="vacancy-chart-container">
+            <canvas id="vacancySkillsChart"></canvas>
+        </div>
+
+
+        
+        <a href="index.html" class="back-link">← Вернуться к загрузке резюме</a>
+        <a href="analytics.html" class="back-link">← Перейти к аналитике резюме</a>
+    </div>
+
+    <script src="vacancies.js"></script>
+</body>
+</html>
