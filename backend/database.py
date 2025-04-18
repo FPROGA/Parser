@@ -45,11 +45,11 @@ class Database:
     def __init__(self):
         try:
             self.conn = psycopg2.connect(
-                dbname="parser",
-                user="postgres",
+                host="localhost",        
+                database="parser",   
+                user="postgres", 
                 password="TemaiSofaBF1!",
-                host="localhost",
-                port="5433"
+                port="5433"   
             )
             print("✅ Успешное подключение к PostgreSQL!")
             self._create_tables_if_not_exists()
