@@ -132,7 +132,6 @@ def preprocess_text(text):
     return text.strip().lower()
 
 def extract_name(raw_text):
-    """Извлекает ФИО с учетом приоритета начала документа и ключевых слов"""
     doc = nlp(raw_text)
     candidates = []
 
@@ -179,7 +178,6 @@ def extract_name(raw_text):
     return "Не указано"
 
 def extract_sections(text, section_names):
-    """Извлекает разделы резюме"""
     sections = []
     for name in section_names:
         pattern = rf'(?i){re.escape(name)}[\s:-]+(.*?)(?=\n\s*[A-ZА-Я]|$)'
@@ -206,7 +204,7 @@ def find_skill_level(text, keyword):
             else:
                 level = level_func
             max_level = max(max_level, level)
-    return max_level if max_level > 0 else 1
+    return max_level if max_level > 0 else 2
 
 def map_skills(text):
     found_skills = defaultdict(int)
@@ -227,7 +225,6 @@ def map_skills(text):
     return found_skills
 
 def process_resume(file_content, filename):
-    """Обрабатывает резюме и возвращает структурированные данные"""
     try:
         raw_text = extract_text_from_file(file_content, filename)
         if not raw_text:
