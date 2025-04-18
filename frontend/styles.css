@@ -1,4 +1,4 @@
-/* Основные стили */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -15,7 +15,6 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Стили для загрузки файла */
 .upload-box {
   border: 2px dashed #ccc;
   padding: 30px;
@@ -39,7 +38,6 @@ body {
   background: #1976D2;
 }
 
-/* Кнопка перехода на страницу анализа */
 .header-controls {
   position: fixed;
   top: 20px;
@@ -59,7 +57,6 @@ body {
   background: #388E3C;
 }
 
-/* Блок рекомендаций */
 .recommendation-container {
   margin-top: 30px;
   background: white;
@@ -81,7 +78,7 @@ body {
 }
 
 .skills-table-container {
-  max-height: 220px; /* 10 строк по ~22px */
+  max-height: 220px; 
   overflow-y: auto;
   display: block;
 }
@@ -151,7 +148,7 @@ body {
 }
 
 .file-input {
-  display: none; /* Скрываем стандартный input */
+  display: none; 
 }
 
 .upload-box {
@@ -208,7 +205,6 @@ body {
   margin-top: 0;
   color: #555;
 }
-/* Добавим в конец файла */
 
 .back-link {
   display: inline-block;
@@ -266,7 +262,6 @@ body {
   font-weight: bold;
 }
 
-/* Новые стили для отображения hard skills */
 .hard-skills-container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -364,7 +359,6 @@ h1 {
   transform: translateY(-5px);
 }
 
-/* Карточка общего количества резюме */
 .total-resumes {
   background: linear-gradient(135deg, #e3f2fd 30%, #bbdefb 100%);
 }
@@ -373,7 +367,6 @@ h1 {
   color: #1976d2;
 }
 
-/* Карточка топ кандидатов */
 .top-candidates {
   background: linear-gradient(135deg, #ffe0b2 30%, #ffcc80 100%);
 }
@@ -382,7 +375,7 @@ h1 {
   color: #f57c00;
 }
 
-/* Карточка топ-5 навыков */
+
 .top-skills {
   background: linear-gradient(135deg, #dcedc8 30%, #c5e1a5 100%);
 }
